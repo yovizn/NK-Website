@@ -1,0 +1,45 @@
+.backgroundImage {
+  position: absolute;
+  height: 140vh;
+  width: 100%;
+  top: 0;
+  filter: brightness(30%);
+}
+
+.backgroundImage img {
+  object-fit: cover;
+}
+
+.introContainer {
+  margin-top: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introContainer h1 {
+  z-index: 3;
+  font-weight: 700;
+  font-size: 7vw;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.introImage {
+  position: absolute;
+  width: 30rem;
+  height: 30rem;
+  filter: brightness(100%);
+}
+
+@media (max-width: 768px) {
+  .introImage {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+.introImage img {
+  object-fit: contain;
+  object-position: top;
+}
